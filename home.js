@@ -59,12 +59,18 @@ document.getElementById('btn-withdraw-money').addEventListener('click', function
     // checking account number is 11 digit or not 
     if (agentNumber.length >= 11) {
         //withdraw money calculation
-        const totalAmount = wavailableBalance - inputWithdraw;
-        // set available balance to wallet
-        document.getElementById('available-balance').innerText = totalAmount;
+        if (wavailableBalance < inputWithdraw) {
+            alert("insufficient balance");
+            return;
+        }
+        else {
+            const totalAmount = wavailableBalance - inputWithdraw;
+            // set available balance to wallet
+            document.getElementById('available-balance').innerText = totalAmount;
+        }
     }
     else {
-        alert('Please, provide valid account number')
+        alert('Please, provide valid account number');
         return;
     }
 });
