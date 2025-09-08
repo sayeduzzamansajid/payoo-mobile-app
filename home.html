@@ -10,7 +10,8 @@
             transform: scale(1.05);
             background-color: lightgray;
         }
-        .card:active{
+
+        .card:active {
             transform: scale(1.05);
             background-color: lightgray;
         }
@@ -55,15 +56,17 @@
                 <img src="assets/send1.png" alt="" class="h-[25px] w-[25px] ">
                 <h2 class="text-center">Cashout</h2>
             </div>
-            <div id="transfer-money" class="card rounded-xl w-[125px] h-[90px] flex items-center justify-center border-2 border-gray-300 ">
+            <div id="transfer-money"
+                class="card rounded-xl w-[125px] h-[90px] flex items-center justify-center border-2 border-gray-300 ">
                 <img src="assets/money1.png" alt="" class="h-[25px] w-[25px] ">
                 <h2 class="text-center">Transfer Money</h2>
             </div>
-            <div class="card rounded-xl w-[125px] h-[90px] flex items-center justify-center border-2 border-gray-300 ">
+            <div id="get-bonus"
+                class="card rounded-xl w-[125px] h-[90px] flex items-center justify-center border-2 border-gray-300 ">
                 <img src="assets/bonus1.png" alt="" class="h-[25px] w-[25px] ">
                 <h2 class="text-center">Get Bonus</h2>
             </div>
-            <div class="card rounded-xl w-[125px] h-[90px] flex items-center justify-center border-2 border-gray-300 ">
+            <div id="pay-bill" class="card rounded-xl w-[125px] h-[90px] flex items-center justify-center border-2 border-gray-300 ">
                 <img src="assets/purse1.png" alt="" class="h-[25px] w-[25px] ">
                 <h2 class="text-center">Pay Bill</h2>
             </div>
@@ -78,7 +81,7 @@
         <div>
             <h1 class="font-bold ml-4 p-4">Add Money</h1>
         </div>
-        <form class="bg-white rounded-s-2xl p-8">
+        <form class="bg-white rounded-2xl p-8">
             <div>
                 <h1 class="font-semibold">Select a Bank</h1>
                 <select id="bank" class="select bg-[#f4f5f7] mt-3 rounded-3xl mb-4">
@@ -124,7 +127,7 @@
         <div>
             <h1 class="font-bold ml-4 p-4">Cash Out </h1>
         </div>
-        <form class="bg-white rounded-s-2xl p-8">
+        <form class="bg-white rounded-2xl p-8">
             <div class="mb-4">
                 <label for="agentNumber" class="font-semibold">Agent Number</label>
                 <br>
@@ -141,7 +144,7 @@
                 <label for="wpin" class="font-semibold">Pin Number</label>
                 <br>
                 <input id="wadd-pin" type="text" placeholder="Enter 4 Digit Pin Number"
-                    class="input bg-[#f4f5f7] mt-3 rounded-3xl" name="wpin"/>
+                    class="input bg-[#f4f5f7] mt-3 rounded-3xl" name="wpin" />
             </div>
             <button id="btn-withdraw-money" type="button"
                 class="btn  mt-5 w-full rounded-3xl bg-[#0874F2] text-white">Withdraw Money</button>
@@ -150,11 +153,11 @@
 
     <!-- transfer money section  -->
 
-     <div id="transfer-form" class="form max-w-md mx-auto p-6 mb-[100px] hidden">
+    <div id="transfer-form" class="form max-w-md mx-auto p-6 mb-[100px] hidden">
         <div>
             <h1 class="font-bold ml-4 p-4">Transfer Money</h1>
         </div>
-        <form class="bg-white rounded-s-2xl p-8">
+        <form class="bg-white rounded-2xl p-8">
             <div class="mb-4">
                 <label for="accnumber" class="font-semibold">User Account Number</label>
                 <br>
@@ -165,7 +168,7 @@
                 <label for="tamount" class="font-semibold">Amount</label>
                 <br>
                 <input id="transfer-amount" type="text" placeholder="Amount to Transfer"
-                    class="input bg-[#f4f5f7] mt-3 rounded-3xl" name="tamount"/>
+                    class="input bg-[#f4f5f7] mt-3 rounded-3xl" name="tamount" />
             </div>
             <div>
                 <label for="tpin" class="font-semibold">Pin Number</label>
@@ -173,10 +176,74 @@
                 <input id="t-pin" type="text" placeholder="Enter 4 Digit Pin Number"
                     class="input bg-[#f4f5f7] mt-3 rounded-3xl" name="tpin" />
             </div>
-            <button id="btn-transfer" type="button"
-                class="btn  mt-5 w-full rounded-3xl bg-[#0874F2] text-white">Send Now</button>
+            <button id="btn-transfer" type="button" class="btn  mt-5 w-full rounded-3xl bg-[#0874F2] text-white">Send
+                Now</button>
         </form>
     </div>
+
+    <!-- get bonus section  -->
+
+    <div id="get-bonus-form" class="form max-w-md mx-auto p-6 mb-[100px] hidden">
+        <div>
+            <h1 class="font-bold ml-4 p-4">Get Bonus</h1>
+        </div>
+        <form class="bg-white rounded-2xl p-8">
+            <div class="mb-4">
+                <label for="coupon" class="font-semibold">Enter Bonus Coupon</label>
+                <br>
+                <input type="text" placeholder="Enter your coupon" class="input bg-[#f4f5f7] mt-3 rounded-3xl"
+                    name="coupon" />
+            </div>
+            <button type="button" class="btn  mt-5 w-full rounded-3xl bg-[#0874F2] text-white">Get Bonus</button>
+        </form>
+    </div>
+
+    <!-- pay bill section  -->
+
+    <div id="pay-bill-form" class="form max-w-md mx-auto p-6 mb-[100px] hidden">
+        <div>
+            <h1 class="font-bold ml-4 p-4">Pay Bill</h1>
+        </div>
+        <form class="bg-white rounded-2xl p-8">
+            <div>
+                <h1 class="font-semibold">Select To Pay</h1>
+                <select id="bill-type" class="select bg-[#f4f5f7] mt-3 rounded-3xl mb-4">
+                    <option disabled selected>Pay for</option>
+                    <option >Electricity Bill </option>
+                    <option >Gas Bill </option>
+                    <option >Water Bill </option>
+                    <option >Education Fee </option>
+                    <option >Internet Bill </option>
+                    <option >Govt. Fee </option>
+                    <option >Telephone Bill </option>
+                    <option >Mobile Recharge</option>
+                    <option >Toll Fee </option>
+                    <option >Marchant payment</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="billacc" class="font-semibold">Biller Account Number</label>
+                <br>
+                <input id="biller-acc-number" type="text" placeholder="Enter Account Number"
+                    class="input bg-[#f4f5f7] mt-3 rounded-3xl" name="billacc" />
+            </div>
+            <div class="mb-4">
+                <label for="payAmount" class="font-semibold">Amount to Pay</label>
+                <br>
+                <input id="bill-amount" type="text" placeholder="Add Amount to pay"
+                    class="input bg-[#f4f5f7] mt-3 rounded-3xl" name="payAmount" />
+            </div>
+            <div>
+                <label for="billpin" class="font-semibold">Pin Number</label>
+                <br>
+                <input id="bill-pin" type="text" placeholder="Enter 4 Digit Pin Number"
+                    class="input bg-[#f4f5f7] mt-3 rounded-3xl" name="bilpin" />
+            </div>
+            <button id="btn-pay-bill" type="button" class="btn  mt-5 w-full rounded-3xl bg-[#0874F2] text-white">Pay Now</button>
+        </form>
+    </div>
+
+
 
 
 
