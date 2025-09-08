@@ -145,7 +145,7 @@ document.getElementById('get-bonus').addEventListener('click',function(event){
     const addMoneyForm = document.getElementById('add-money-form');
     const cashOutForm = document.getElementById('cash-out-form');
     const payBillForm = document.getElementById('pay-bill-form');
-    getBonusForm.style.display = 'block'
+    getBonusForm.style.display = 'block';
     payBillForm.style.display = 'none';
     transferForm.style.display = 'none';
     addMoneyForm.style.display = 'none';
@@ -180,7 +180,7 @@ document.getElementById('btn-pay-bill').addEventListener('click',function(event)
 
 
 //event for Paybill and hide all 
-document.getElementById('transfer-money').addEventListener('click',function(event){
+document.getElementById('pay-bill').addEventListener('click',function(event){
     const payBillForm = document.getElementById('pay-bill-form');
     const transferForm = document.getElementById('transfer-form');
     const addMoneyForm = document.getElementById('add-money-form');
