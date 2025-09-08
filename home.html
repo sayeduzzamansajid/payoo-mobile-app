@@ -41,11 +41,11 @@
         </div>
 
         <div class="card-container mb-2 p-6 grid grid-cols-3 gap-4">
-            <div class="card rounded-xl w-[125px] h-[90px] flex items-center justify-center border-2 border-gray-300 ">
+            <div id="add-money" class="card rounded-xl w-[125px] h-[90px] flex items-center justify-center border-2 border-gray-300 ">
                 <img src="assets/wallet1.png" alt="" class="h-[25px] w-[25px] ">
                 <h2 class="text-center">Add Money</h2>
             </div>
-            <div class="card rounded-xl w-[125px] h-[90px] flex items-center justify-center border-2 border-gray-300 ">
+            <div id="cash-out" class="card rounded-xl w-[125px] h-[90px] flex items-center justify-center border-2 border-gray-300 ">
                 <img src="assets/send1.png" alt="" class="h-[25px] w-[25px] ">
                 <h2 class="text-center">Cashout</h2>
             </div>
@@ -68,9 +68,9 @@
         </div>
     </div>
 <!-- add money section  -->
-    <div class="form max-w-md mx-auto p-6">
+    <div id="add-money-form" class="form max-w-md mx-auto p-6 mb-[100px] hidden">
         <div>
-            <h1>Add Money</h1>
+            <h1 class="font-bold ml-4 p-4">Add Money</h1>
         </div>
         <form class="bg-white rounded-s-2xl p-8">
             <div>
@@ -98,7 +98,7 @@
             <div class="mb-4">
                 <label for="" class="font-semibold">Amount to Add</label>
                 <br>
-                <input id="add-amount" type="text" placeholder="Add Amount to Withdraw"
+                <input id="add-amount" type="text" placeholder="Add Amount to Add"
                     class="input bg-[#f4f5f7] mt-3 rounded-3xl" />
             </div>
             <div>
@@ -108,6 +108,34 @@
                     class="input bg-[#f4f5f7] mt-3 rounded-3xl" />
             </div>
             <button id="btn-addMoney" type="button" class="btn  mt-5 w-full rounded-3xl bg-[#0874F2] text-white">Add Money</button>
+        </form>
+    </div>
+
+    <!-- cash out section  -->
+     <div id="cash-out-form" class="form max-w-md mx-auto p-6 mb-[100px] hidden">
+        <div>
+            <h1 class="font-bold ml-4 p-4">Cash Out </h1>
+        </div>
+        <form class="bg-white rounded-s-2xl p-8">
+            <div class="mb-4">
+                <label for="" class="font-semibold">Agent Number</label>
+                <br>
+                <input id="agent-number" type="text" placeholder="Enter 11 Digit Agent Number"
+                    class="input bg-[#f4f5f7] mt-3 rounded-3xl" />
+            </div>
+            <div class="mb-4">
+                <label for="" class="font-semibold">Amount to Withdraw</label>
+                <br>
+                <input id="withdraw-amount" type="text" placeholder="Add Amount to Withdraw"
+                    class="input bg-[#f4f5f7] mt-3 rounded-3xl" />
+            </div>
+            <div>
+                <label for="" class="font-semibold">Pin Number</label>
+                <br>
+                <input id="wadd-pin" type="text" placeholder="Enter 4 Digit Pin Number"
+                    class="input bg-[#f4f5f7] mt-3 rounded-3xl" />
+            </div>
+            <button id="btn-withdraw-money" type="button" class="btn  mt-5 w-full rounded-3xl bg-[#0874F2] text-white">Withdraw Money</button>
         </form>
     </div>
     <script src="home.js"></script>
