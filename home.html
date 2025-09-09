@@ -34,14 +34,15 @@
                 </div>
             </div>
             <div id="right">
-                <button class="btn text-[#08080880]"><i
+                <button id="logout" class="btn text-[#08080880]"><i
                         class="fa-solid fa-arrow-right-from-bracket rotate-180 text-[#131313bf]"></i>Log out</button>
             </div>
         </div>
 
         <div class=" mt-8 p-6">
             <h1 class="text-2xl font-bold">🔥 Welcome to Payooo!</h1>
-            <p class="text-[#08080880]">Enjoy easy and convenient financial services with us. <br>Cashout charge is low
+            <p class="text-[#08080880] mt-3">Enjoy easy and convenient financial services with us. <br>Cashout charge is
+                low
                 and </p>
         </div>
 
@@ -66,17 +67,22 @@
                 <img src="assets/bonus1.png" alt="" class="h-[25px] w-[25px] ">
                 <h2 class="text-center">Get Bonus</h2>
             </div>
-            <div id="pay-bill" class="card rounded-xl w-[125px] h-[90px] flex items-center justify-center border-2 border-gray-300 ">
+            <div id="pay-bill"
+                class="card rounded-xl w-[125px] h-[90px] flex items-center justify-center border-2 border-gray-300 ">
                 <img src="assets/purse1.png" alt="" class="h-[25px] w-[25px] ">
                 <h2 class="text-center">Pay Bill</h2>
             </div>
-            <div class="card rounded-xl w-[125px] h-[90px] flex items-center justify-center border-2 border-gray-300 ">
+            <div id="transaction"
+                class="card rounded-xl w-[125px] h-[90px] flex items-center justify-center border-2 border-gray-300 ">
                 <img src="assets/transaction1.png" alt="" class="h-[25px] w-[25px] ">
-                <h2 class="text-center">Transectios</h2>
+                <h2 class="text-center">Transactions</h2>
             </div>
         </div>
     </div>
+
+
     <!-- add money section  -->
+
     <div id="add-money-form" class="form max-w-md mx-auto p-6 mb-[100px] hidden">
         <div>
             <h1 class="font-bold ml-4 p-4">Add Money</h1>
@@ -194,7 +200,8 @@
                 <input type="text" placeholder="Enter your coupon" class="input bg-[#f4f5f7] mt-3 rounded-3xl"
                     name="coupon" />
             </div>
-            <button type="button" class="btn  mt-5 w-full rounded-3xl bg-[#0874F2] text-white">Get Bonus</button>
+            <button id="btn-bonus" type="button" class="btn  mt-5 w-full rounded-3xl bg-[#0874F2] text-white">Get
+                Bonus</button>
         </form>
     </div>
 
@@ -209,16 +216,16 @@
                 <h1 class="font-semibold">Select To Pay</h1>
                 <select id="bill-type" class="select bg-[#f4f5f7] mt-3 rounded-3xl mb-4">
                     <option disabled selected>Pay for</option>
-                    <option >Electricity Bill </option>
-                    <option >Gas Bill </option>
-                    <option >Water Bill </option>
-                    <option >Education Fee </option>
-                    <option >Internet Bill </option>
-                    <option >Govt. Fee </option>
-                    <option >Telephone Bill </option>
-                    <option >Mobile Recharge</option>
-                    <option >Toll Fee </option>
-                    <option >Marchant payment</option>
+                    <option>Electricity Bill </option>
+                    <option>Gas Bill </option>
+                    <option>Water Bill </option>
+                    <option>Education Fee </option>
+                    <option>Internet Bill </option>
+                    <option>Govt. Fee </option>
+                    <option>Telephone Bill </option>
+                    <option>Mobile Recharge</option>
+                    <option>Toll Fee </option>
+                    <option>Marchant payment</option>
                 </select>
             </div>
             <div class="mb-4">
@@ -239,8 +246,21 @@
                 <input id="bill-pin" type="text" placeholder="Enter 4 Digit Pin Number"
                     class="input bg-[#f4f5f7] mt-3 rounded-3xl" name="bilpin" />
             </div>
-            <button id="btn-pay-bill" type="button" class="btn  mt-5 w-full rounded-3xl bg-[#0874F2] text-white">Pay Now</button>
+            <button id="btn-pay-bill" type="button" class="btn  mt-5 w-full rounded-3xl bg-[#0874F2] text-white">Pay
+                Now</button>
         </form>
+    </div>
+
+    <!-- transaction section  -->
+
+    <div id="transaction-form" class="form max-w-md mx-auto p-2 mb-[100px] hidden">
+        <div class="flex justify-between items-center">
+            <h1 class="my-5 font-bold">Transactions</h1>
+            <p class="text-[#08080880]">View All</p>
+        </div>
+        <div id="transaction-container" class="flex flex-col gap-2">
+
+        </div>
     </div>
 
 
