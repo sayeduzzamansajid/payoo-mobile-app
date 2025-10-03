@@ -1,4 +1,5 @@
 //event for login button to navigate annother page
+alert("to log in enter number: 01622299375 and pass: 1234")
 function login(){
     //login details to get logged in, log in check
     const phnNumber = '01622299375';//predefined
@@ -10,6 +11,7 @@ function login(){
     }
     else{
         alert("Invalid Phone or pin, check Again");
+        
     }
 
 }
