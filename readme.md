@@ -1,4 +1,4 @@
-# Wallet App (Vanilla JS)
+# Payoo Mobile App (Vanilla JS)
 
 A simple browser-based wallet simulation that lets users log in and perform core wallet actions: add money, cash out, transfer funds, pay bills, and view a basic transaction history. The app is built with plain HTML, CSS (via utility classes), and vanilla JavaScript, using DOM state for balances and operations.
 
